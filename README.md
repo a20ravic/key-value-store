@@ -1,6 +1,26 @@
 # key-value-store
 A distributed key value store
 
+Problem Statement:
+
+“A key-value store, or key-value database, is a data storage paradigm designed for storing, retrieving, and managing associative arrays, a data structure more commonly known today as a dictionary or hash.” from Wikipedia. 
+
+Implement a distributed Key-Value (KV) store using any language of your choice. For simplicity you can assume both the key and value types are strings. Your KV store should be running as (at least) 2 different processes that replicate data between them (ie) we should be able to put in a Key and Value to Process 1 and query for the same Key on Process 2, for which we should get the corresponding Value.
+
+Expose the store via a HTTP service that would allow us to GET / SET key-value pairs. Ideally, write it as you would a production piece of code with tests. Bonus points for making this as fast as possible. 
+
+Sample Invocations:
+$ curl -H "Content-type: application/json" -XPOST http://localhost:4455/set/key -d ‘“value”’
+OK 
+$ curl -H “Accept: application/json” http://localhost:4466/get/key
+“value”
+
+Solution Approach:
+
+Key value stores allows to store schema-less data. This data is usually consisting of a string which represents the key and the actual data which is considered to be the value in the "key - value" relationship. 
+
+I have followed the approach of how a dictionary will perform. Hence chose HashMap class to implement the Key-Value pair and manipulate it for further processes.
+
 Follow the steps to run the program:
 
 1) Clone/download the project into your local system.
