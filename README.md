@@ -21,11 +21,21 @@ Key value stores allows to store schema-less data. This data is usually consisti
 
 I have chosen Java programming language to implement the given problem statement. I have followed the approach of how a dictionary will perform. Hence chose HashMap class to implement the Key-Value pair and manipulate it for further processes.
 
-Follow the steps to run the program:
+Follow the steps to review the code:
 
 1) Clone/download the project into your local system.
 2) Unzip the file. You may find the War file named "KeyValueStore.war".
-3) Considering the latest version of Tomcat Server is installed in your local, place the war file under ..\Tomcat\webapps folder.
+3) Considering Eclipse IDE is in your machine, In Eclipse, select File > Import.
+4) In the Import dialog, under folder Web > WAR file and then click Next.
+5) In the Import dialog, choose the available Apache Tomcat Server.
+6) In the Import dialog, click Select All.
+7) Click Finish to populate the Web project. 
+
+Follow the steps to run the program:
+
+1) Clone/download the project into your local machine.
+2) Unzip the file. You may find the War file named "KeyValueStore.war".
+3) Considering the latest version of Tomcat Server is installed in your local machine, place the war file under ..\Tomcat\webapps folder.
 4) Start the Tomcat Server.
 5) Upon successful server startup, open any broswer or using Postman desktop application sample invoke the following webservice URLs:
   
@@ -43,3 +53,4 @@ Follow the steps to run the program:
   
   Process 5: Retrieving a Key for the given Value:
   http://localhost:8080/KeyValueStore/rest/KeyValueStoreServiceImpl/getkeyof/Value1
+  
