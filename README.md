@@ -19,13 +19,13 @@ Solution Approach:
 
 Key value stores allows to store schema-less data. This data is usually consisting of a string which represents the key and the actual data which is considered to be the value in the "key - value" relationship. 
 
-I have followed the approach of how a dictionary will perform. Hence chose HashMap class to implement the Key-Value pair and manipulate it for further processes.
+I have chosen Java programming language to implement the given problem statement. I have followed the approach of how a dictionary will perform. Hence chose HashMap class to implement the Key-Value pair and manipulate it for further processes.
 
 Follow the steps to run the program:
 
 1) Clone/download the project into your local system.
-2) Unzip the file. You may find the War named "KeyValueStore.war"
-3) Considering the latest version of Tomcat Server is installed in your local, place the war file under ..\Tomcat\webapps folder
+2) Unzip the file. You may find the War file named "KeyValueStore.war".
+3) Considering the latest version of Tomcat Server is installed in your local, place the war file under ..\Tomcat\webapps folder.
 4) Start the Tomcat Server.
 5) Upon successful server startup, open any broswer or using Postman desktop application sample invoke the following webservice URLs:
   
